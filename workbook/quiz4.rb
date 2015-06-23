@@ -14,14 +14,14 @@ letters.each do |letter|
 	letter_frequency = statement.scan(letter).count
 	result[letter] = letter_frequency if letter_frequency > 0
 end
-p result
 
 # Also tried ...
 
 #1 - Get Character
 #2 - See if character is a key in hash
-	#if it exisits count it
+	#if it exisits count if
 	#else add the char as a key and count it
+
 statement.each_char do |char|
 	next if char == " "
 	if letter_freq.has_key?(char)
@@ -64,8 +64,9 @@ my_title = "this is my title"
 
 new_title = my_title.split.map { |word| word.downcase.capitalize }.join(' ')
 # Split string to get an array of words, then iterate through each item(word) in array 
-# by first dowcasing everything, then capitalizing each item.  Fianlly, use the join method
+# by first downcasing everything, then capitalizing each item.  Finally, use the join method
 # to return a string of capitalized words.
+
 # 9
 munsters = { 
   "Herman" => { "age" => 32, "gender" => "male" }, 
@@ -81,7 +82,7 @@ munsters.each do |key, value|
     	value["group_age"] = "kid"
     when (18..64)
     	value["group_age"] = "adult"
-  	else
+    else
     	value["group_age"] = "senior" 
   end   
 end
